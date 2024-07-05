@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family:  sans-serif;
+  background-color: #fff;
+  -webkit-text-stroke:0.3px;
+}
+
+b{font-weight:400;-webkit-text-stroke:0.5px;}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  padding: 16px;
+  background-color: white;
+  margin:0 500px;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0 22px 0;
+  display: inline-block;
+  border: 1px solid #f5f8fc;
+  border-radius: 4px;
+  background: #f5f8fc;
+}
+
+input[type=submit] {
+  width: auto;
+  padding: 6px 12px;
+  font-size:14px;
+  margin: 10px 0 22px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background: #fff;
+}
+
+label{padding-left:0px;font-weight:400;font-size:16px;}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #f5f8fc;
+  outline: none;
+  border-radius:4px;
+}
+
+
+hr {
+  border: 1px solid #f5f8fc;
+  margin-bottom: 25px;
+}
+
+
+.registerbtn {
+  background-color: #000;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: 1px solid #000;
+  border-radius:6px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+a {
+  color: #08c;
+  text-decoration:none;
+}
+
+
+.signin {
+  background-color: #fff;
+  text-align: center;
+}
+
+::-webkit-scrollbar{width:8px;height:14px;visibility:hidden}::-webkit-scrollbar:horizontal{width:8px;height:14px;visibility:hidden}::-webkit-scrollbar-track{background-color:transparent;visibility:hidden}::-webkit-scrollbar-thumb{background-color:#f3f7fa;border-radius:6px;visibility:hidden}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1 style="font-size:24px;font-weight:400;-webkit-text-stroke:1px;">UMSOCIAL Master Application Form</h1>
+    <p style="font-size:14px;">Kindly complete the provided form to enroll and become a Master.</p>
+    <hr>
+
+    <label for="psw"><b>2). Email Address :</b></label>
+    <input type="text" placeholder="" >
+
+    <label for="psw-repeat"><b>3). MT4 ID (Trading account that you wish to connect) :</b></label>
+    <input type="text" placeholder="" >
+	
+	<label for="psw-repeat"><b>4). Strategy Nickname :</b></label>
+	<p style="font-size:13px;">This is the name of your strategy that will be visible to Followers on the Ratings page. Ensure the name is unique, clear, and not overly brief. Avoid excessive use of acronyms.</p>
+    <input type="text" placeholder="" >
+	
+	<label for="psw-repeat"><b>5). Strategy Description :</b></label>
+	<p style="font-size:13px;">We reserve the right to decline any summary if it includes language that is offensive or derogatory in nature, or if it violates our trademarks or trade names in any manner.</p>
+    <input type="text" placeholder="">
+	
+	<label for="psw-repeat"><b>6). Performance fee (up to 50%) :</b></label>
+	<p style="font-size:13px;">We reserve the right to decline any summary if it includes language that is offensive or derogatory in nature, or if it violates our trademarks or trade names in any manner.</p>
+   <input type="text" placeholder="" >
+	
+	<label for="psw-repeat"><b>7). Fee Payout Interval :</b></label><br>
+	 <select name="" id="payout">
+    <option value="">Per Trade</option>
+    <option value="">Daily</option>
+    <option value="">Weekly</option>
+    <option value="">Monthly</option>
+  </select>
+	<p style="font-size:13px;">Per Trade, Daily, Weekly, Monthly, Quarterly</p>
+    <input type="text" placeholder="" >
+	
+	<label for="psw-repeat"><b>8). 绩效费账户 (MT4 账号) :</b></label>
+	<p style="font-size:13px;">This is a separate MT4 account designated for depositing performance fees paid by your Followers.</p>
+    <input type="text" placeholder="" >
+	
+	<label for="psw-repeat"><b>9). 申请条件 :</b></label> <br><br>
+	<p style="font-size:13px;">This is a separate MT4 account designated for depositing performance fees paid by your Followers.</p>
+   <input type="checkbox" id="r1" name="" value="">
+  <label for="vehicle1"> 账户净值大于 $2,000.00</label><br>
+   <input type="checkbox" id="r1" name="" value="">
+  <label for="vehicle1"> 已于 UM 平台上交易超过 1 个月</label><br>
+     <input type="checkbox" id="r1" name="" value="">
+  <label for="vehicle1"> 合格交易期间 '总利润' 大于 5%</label><br>
+     <input type="checkbox" id="r1" name="" value="">
+  <label for="vehicle1"> 合格交易期间 '回撤率' 低于 30%</label><br>
+     <input type="checkbox" id="r1" name="" value="">
+  <label for="vehicle1"> 无强制平仓记录</label><br><br>
+  
+	
+	<label for="psw-repeat"><b>10). 策略头像 :</b></label>
+	<p style="font-size:13px;">Kindly upload .jpg or .png file format only.</p>
+	<form action="/action_page.php">
+	<input type="file" id="myFile" name="filename">
+	<input type="submit" >
+	</form>
+	
+	
+    <hr>
+    <p style="font-size:14px;">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Sign up</button>
+  </div>
+  
+  <div class="container signin">
+    <p style="font-size:14px;">Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>

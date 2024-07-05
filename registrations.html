@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  font-family:  sans-serif;
+  background-color: #fff;
+  -webkit-text-stroke:0.3px;
+}
+
+b{font-weight:400;-webkit-text-stroke:0.5px;color:#1A1AA6;}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  padding: 16px;
+  background-color: white;
+  margin:0 200px 0 200px;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px 25px;
+  margin: 10px 0 22px 0;
+  display: inline-block;
+  border: 1px solid #f5f8fc;
+  border-radius: 4px;
+  background: #f5f8fc;
+  font-size: 14px;
+}
+
+textarea{
+	resize: auto;
+	font-size: 14px;
+	width: 642px;
+	height: 74px;
+	padding: 10px;
+	border: 1px solid #000;
+}
+
+input[type=submit] {
+  width: auto;
+  padding: 6px 12px;
+  font-size:14px;
+  margin: 10px 0 22px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background: #fff;
+}
+
+label{padding-left:0px;font-weight:400;font-size:15px;}
+
+.checkbox1{font-size:13px!important;}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #f5f8fc;
+  outline: none;
+  border-radius:4px;
+}
+
+
+hr {
+  border: 1px solid #f5f8fc;
+  margin-bottom: 25px;
+}
+
+
+.registerbtn {
+  background-color: #000;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: 1px solid #000;
+  border-radius:6px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+a {
+  color: #08c;
+  text-decoration:none;
+}
+
+
+.signin {
+  background-color: #fff;
+  text-align: center;
+}
+
+select#payout {
+    margin-top: 10px;
+	margin-left: 25px;
+	font-size: 14px;
+	padding: 8px 25px 8px 8px;
+	border: 1px solid #000;
+	border-radius: 4px;
+	outline: 0;
+}
+
+::-webkit-scrollbar{width:8px;height:14px;visibility:hidden}::-webkit-scrollbar:horizontal{width:8px;height:14px;visibility:hidden}::-webkit-scrollbar-track{background-color:transparent;visibility:hidden}::-webkit-scrollbar-thumb{background-color:#f3f7fa;border-radius:6px;visibility:hidden}
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1 style="font-size:24px;font-weight:400;-webkit-text-stroke:1px;">Social Trading Master Online Application Form</h1>
+    <p style="font-size:12px;">Below are several prerequisites for Master Traders on the UMSOCIAL platform. <br><br>We anticipate that you :<br><br>
+	⦁ possess a validated and professional trading strategy. <br>
+	⦁ demonstrate exceptional trading performance. <br>
+	⦁ employ a stringent risk management system.  <br>
+	⦁ acknowledge UM's brand principles.<br>
+	⦁ be committed to mutual growth with UM.<br>
+	</p>
+    <hr>
+
+    <label for="psw"><b>1). Email Address :</b></label>
+    <input type="text" placeholder="" >
+
+    <label for="psw-repeat"><b>2). MT4 ID :</b></label>
+	<p style="font-size:12px;">Please enter the trading account you wish to connect. Ensure this account has no copy trade positions, open positions, or pending/market orders. Additionally, this account should not be following any Masters.
+</p>
+    <input type="text" placeholder="" >
+	
+	<label for="psw-repeat"><b>3). Strategy Nickname :</b></label>
+	<p style="font-size:12px;">This is the name of your strategy that will be visible to Followers on the Ratings page. <br>Please ensure the name is unique, clear, and avoid excessive use of acronyms.</p>
+    <input type="text" placeholder="" >
+	
+	<label for="psw-repeat"><b>4). Strategy Profile :</b></label>
+	<p style="font-size:12px;">Include a bio in your profile—a brief introduction about your trading background. <br>This helps you connect with potential investors.</p>
+    <input type="text" placeholder="" >
+	
+	<label for="psw-repeat"><b>5). Strategy Description :</b></label>
+	<p style="font-size:12px;">Write a detailed description of your strategy. You must refrain from using any guarantees, inappropriate language, or making speculations about outcomes and statistics. We reserve the right to decline any description if it includes language that is offensive or derogatory in nature, or if it violates our trademarks or trade names in any manner.</p>
+    <textarea type="text" placeholder="" style="resize:auto;font-size:14px;width:100%;"> </textarea><br></br>
+	
+	<label for="psw-repeat"><b>6). Performance Fee :</b></label>
+	<p style="font-size:12px;">The performance fee is calculated as a percentage (up to 50%) of the net profits earned, incentivizing you (the Master) to deliver strong performance. This fee is determined using the High-Water Mark principle.</p>
+   <input type="text" placeholder="" >   <br>
+
+	
+	<label for="psw-repeat"><b>7). Perf. Fee Payout Interval :</b></label><br>
+	<select name="" id="payout">
+    <option value="">Per Trade</option>
+    <option value="">Daily</option>
+    <option value="">Weekly</option>
+    <option value="">Monthly</option>
+  </select>
+<br>
+<br>
+
+	
+	<label for="psw-repeat"><b>8). Fee Receiver Account (MT4 ID) :</b></label>
+	<p style="font-size:12px;">This is a separate MT4 account designated for depositing performance fees paid by your Followers.</p>
+    <input type="text" placeholder="" >
+	
+	<label for="psw-repeat"><b>9). Application Requirements :</b></label> <br>
+	<p style="font-size:12px;">If you meet the requirements we have specified to become a Master Trader, please check the box below :</p>
+   <input type="checkbox" id="r1" name="" value="">
+  <label class="checkbox1" for=""> Have an active LIVE trading account</label><br>
+   <input type="checkbox" id="r1" name="" value="">
+  <label class="checkbox1" for=""> Account with a minimum balance/equity of $2,000</label><br>
+     <input type="checkbox" id="r1" name="" value="">
+  <label class="checkbox1" for=""> Possess 1 month of trading history with a minimum of 30 closed trades</label><br>
+       <input type="checkbox" id="r1" name="" value="">
+  <label class="checkbox1" for=""> Actively traded within the past 7 days</label><br>
+       <input type="checkbox" id="r1" name="" value="">
+  <label class="checkbox1" for=""> Return (ROI) > 0% </label><br>
+     <input type="checkbox" id="r1" name="" value="">
+  <label class="checkbox1" for=""> Max Drawdown < 30% </label><br>
+     <input type="checkbox" id="r1" name="" value="">
+  <label class="checkbox1" for=""> No stopouts have been recorded.</label><br><br>
+	
+	<label for="psw-repeat"><b>10). Profile Picture :</b></label>
+	<p style="font-size:12px;">Your profile picture will be displayed on all your strategies. Please upload a professional, clear, and high-quality photo or avatar that will inspire confidence in investors to copy you. <br><br>Ensure the image is in .jpeg or .png format and does not exceed 20MB in size.</p>
+	<form action="/action_page.php">
+	<input type="file" id="myFile" name="filename"><br>
+	<input type="submit" value="Upload" 
+	</form>
+	
+	
+    <hr>
+    <p style="font-size:13px;">By registering, you agree to our <a href="#">Terms & Conditions</a>.</p>
+
+    <button type="submit" class="registerbtn">Submit</button>
+  </div>
+  
+  <div class="container signin">
+    <p style="font-size:13px;">Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>

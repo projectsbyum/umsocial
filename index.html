@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UMSOCIAL</title>
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+</head>
+
+<style></style>
+
+<script>
+function loadFrame (elm){
+    var leaderboard = document.getElementById('leaderboard');
+    leaderboard.src = elm.dataset.src;
+}
+</script>
+   
+<body>
+
+<nav class="navbar" id="navbar-main"> 
+<div class="container">
+<a title="点击登录" class="btn-login1" id="b2" data-src="https://demosocial.ultimarkets.com/portal/login" onclick="loadFrame(this)">登录</a>
+<a title="点击登录" class="btn-login1" id="b2" data-src="registration.html" onclick="loadFrame(this)">注册</a>
+<a title="访问 MT4 线上交易平台" class="webtrader1" id="b2" data-src="webtrader.html" onclick="loadFrame(this)">WebTrader</a>
+
+<button title="Card view | 卡片式" class="fa fa-grid-2 icon" id="b2" data-src="https://demosocialrating.ultimarkets.com/widgets/ratings?widgetKey=metricsc" onclick="loadFrame(this)"> </button>
+<button title="Grid view | 表格式" class="fa fa-list-ul icon"id="b1" data-src="https://demosocialrating.ultimarkets.com/widgets/ratings?widgetKey=metricst" onclick="loadFrame(this)"> </button>
+<a class="webtrader" id="b1"  data-src="https://demosocialrating.ultimarkets.com/widgets/ratings?widgetKey=metricst" onclick="loadFrame(this)" title="" > 琅琊榜 </a>
+<a class="menu-tabs" id="b2" data-src="umhelpc.html" onclick="loadFrame(this)" title="Click to learn more about the badges."> 帮助中心 </a>
+<a class="menu-tabs" id="b3" data-src="umaccounts-c.html" onclick="loadFrame(this)" title="Click to learn more about the account types."> 账户类型 </a>
+
+	
+<div class="ta-badge-list">
+<img class="badge" title="Diamond" src="10.gif" alt="Diamond" style="height:34px">
+<img class="badge" title="Gemstone" src="11.gif" alt="Gemstone" style="height:30px">
+<img class="badge" title="Crystal" src="12.gif" alt="Crystal" style="height:30px">
+<img class="badge" title="Gem" src="14.gif" alt="Gem" style="height:32px">
+<img class="badge" title="Gem" src="6.gif" alt="Gem" style="height:28px">
+<img class="badge" title="Gem" src="7.gif" alt="Gem" style="height:28px">
+<img class="badge" title="Gem" src="8.gif" alt="Gem" style="height:21px"> 
+</div>	   
+
+<iframe id="leaderboard" target="_self" frameborder="0" scrolling="yes" style="width:100%!important;height:1000px;border-top:1px solid #e6e9eb;border-radius:4px;"></iframe>  
+
+<script type='text/javascript'>
+    window.addEventListener('load', function () {
+        document.querySelector('.pre-loader').className += ' hidden';
+    });
+</script>
+</body>
+</div>
+
+
+
+</html>
+
